@@ -7,9 +7,21 @@
     <meta name="keywords" lang="hu" content="szalagszövés, elm" />
     <meta name="keywords" lang="en" content="backstrap weaving, elm" />
     <meta name="description" content="An example in elm" />
+    <style>
+      body,
+      div:first-child {
+        margin: 0;
+        height: 100vh;
+      }
+    </style>
   </head>
-
   <body>
-    <canvas></canvas>
+    <main></main>
+	<script src="elm-canvas.js"></script>
+    <script src="elm.js"></script>
+    <script>
+      var app = Elm.Main.init({ node: document.querySelector("main") });
+      // you can use ports and stuff here
+    </script>
   </body>
 </html>
