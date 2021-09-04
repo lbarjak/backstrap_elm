@@ -5293,7 +5293,7 @@ var $joakin$elm_canvas$Canvas$Settings$fill = function (color) {
 	return $joakin$elm_canvas$Canvas$Internal$Canvas$SettingDrawOp(
 		$joakin$elm_canvas$Canvas$Internal$Canvas$Fill(color));
 };
-var $author$project$Main$height = 400;
+var $author$project$Main$height = 300;
 var $joakin$elm_canvas$Canvas$Internal$Canvas$Rect = F3(
 	function (a, b, c) {
 		return {$: 'Rect', a: a, b: b, c: c};
@@ -5435,7 +5435,7 @@ var $avh4$elm_color$Color$RgbaSpace = F4(
 		return {$: 'RgbaSpace', a: a, b: b, c: c, d: d};
 	});
 var $avh4$elm_color$Color$white = A4($avh4$elm_color$Color$RgbaSpace, 255 / 255, 255 / 255, 255 / 255, 1.0);
-var $author$project$Main$width = 400;
+var $author$project$Main$width = 600;
 var $author$project$Main$clearScreen = A2(
 	$joakin$elm_canvas$Canvas$shapes,
 	_List_fromArray(
@@ -6366,7 +6366,7 @@ var $author$project$Main$view = function (_v0) {
 				_Utils_Tuple2($author$project$Main$width, $author$project$Main$height),
 				_List_fromArray(
 					[
-						A2($elm$html$Html$Attributes$style, 'border', '10px solid rgba(0,0,0,0.1)')
+						A2($elm$html$Html$Attributes$style, 'border', '1px solid rgba(0,0,0,1)')
 					]),
 				_List_fromArray(
 					[

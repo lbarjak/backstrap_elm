@@ -9,14 +9,11 @@ import Color
 import Html exposing (Html, div)
 import Html.Attributes exposing (style)
 
-
 type alias Model =
     { count : Float }
 
-
 type Msg
     = Frame Float
-
 
 main : Program () Model Msg
 main =
@@ -31,22 +28,17 @@ main =
         , subscriptions = \model -> onAnimationFrameDelta Frame
         }
 
-
 width =
-    400
-
+    600
 
 height =
-    400
-
+    300
 
 centerX =
     width / 2
 
-
 centerY =
     height / 2
-
 
 view : Model -> Html Msg
 view { count } =
@@ -57,16 +49,14 @@ view { count } =
         ]
         [ Canvas.toHtml
             ( width, height )
-            [ style "border" "10px solid rgba(0,0,0,0.1)" ]
+            [ style "border" "1px solid rgba(0,0,0,1)" ]
             [ clearScreen
             , render count
             ]
         ]
 
-
 clearScreen =
     shapes [ fill Color.white ] [ rect ( 0, 0 ) width height ]
-
 
 render count =
     let
